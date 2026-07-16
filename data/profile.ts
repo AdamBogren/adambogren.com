@@ -10,6 +10,19 @@ export const profile = {
 export const labProjects = [
   {
     index: "01",
+    status: "Building",
+    title: "adambogren.com",
+    summary:
+      "The public front door to my career experience, practical AI experiments, and the lessons connecting them.",
+    problem:
+      "A resume can summarize outcomes, but it cannot fully show how someone thinks, builds, and learns.",
+    approach:
+      "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
+    next: "Publish the MVP, connect the custom domain, and add deeper case studies as the work matures.",
+    tags: ["Portfolio", "Product thinking", "Documentation"],
+  },
+  {
+    index: "02",
     status: "Active",
     title: "Career Operating System",
     summary:
@@ -22,7 +35,7 @@ export const labProjects = [
     tags: ["AI workflow", "Decision support", "Governance"],
   },
   {
-    index: "02",
+    index: "03",
     status: "Prototype",
     title: "Raspberry Pi AI Server",
     summary:
@@ -33,19 +46,6 @@ export const labProjects = [
       "Move repeatable work into a small, reliable server with clear logs and graceful failure handling.",
     next: "Harden reliability, move the weekday search schedule, then add notifications.",
     tags: ["Raspberry Pi", "Automation", "Observability"],
-  },
-  {
-    index: "03",
-    status: "Building",
-    title: "adambogren.com",
-    summary:
-      "The public front door to my career experience, practical AI experiments, and the lessons connecting them.",
-    problem:
-      "A resume can summarize outcomes, but it cannot fully show how someone thinks, builds, and learns.",
-    approach:
-      "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
-    next: "Publish the MVP, connect the custom domain, and add deeper case studies as the work matures.",
-    tags: ["Portfolio", "Product thinking", "Documentation"],
   },
 ];
 
