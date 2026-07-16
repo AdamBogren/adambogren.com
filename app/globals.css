@@ -215,7 +215,7 @@ svg {
 .kicker {
   align-items: center;
   display: flex;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   gap: 10px;
   letter-spacing: 0.14em;
@@ -226,8 +226,8 @@ svg {
 .kicker::before {
   background: var(--accent);
   content: "";
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
 }
 
 .hero h1 {
@@ -715,9 +715,10 @@ svg {
 .systems-copy .lead {
   color: var(--paper);
   font-family: var(--serif);
-  font-size: clamp(26px, 2.7vw, 38px);
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 600;
   letter-spacing: -0.025em;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-top: 0;
 }
 
@@ -730,11 +731,11 @@ svg {
   align-items: center;
   border-top: 1px solid var(--line-light);
   display: flex;
-  font-size: 12px;
-  font-weight: 750;
+  font-size: 14px;
+  font-weight: 850;
   justify-content: space-between;
   letter-spacing: 0.05em;
-  padding: 15px 0;
+  padding: 19px 0;
   text-transform: uppercase;
 }
 
