@@ -391,7 +391,7 @@ svg {
 
 .discipline-rail {
   align-items: center;
-  background: var(--accent);
+  background: var(--jayhawk-blue);
   color: var(--white);
   display: flex;
   gap: clamp(18px, 2.4vw, 38px);
@@ -409,11 +409,15 @@ svg {
 }
 
 .discipline-rail i {
-  background: var(--accent-soft);
+  background: var(--accent);
   border-radius: 50%;
   display: block;
   height: 5px;
   width: 5px;
+}
+
+.discipline-rail i:nth-of-type(even) {
+  background: var(--jayhawk-crimson);
 }
 
 .section-shell {
@@ -444,6 +448,7 @@ svg {
 .lab-card {
   background: var(--white);
   border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
@@ -488,6 +493,18 @@ svg {
   letter-spacing: 0.1em;
   padding: 7px 9px;
   text-transform: uppercase;
+}
+
+.lab-card:nth-child(1) .lab-status {
+  background: rgba(255, 130, 0, 0.09);
+  border-color: rgba(255, 130, 0, 0.24);
+  color: #a45100;
+}
+
+.lab-card:nth-child(3) .lab-status {
+  background: rgba(232, 0, 13, 0.07);
+  border-color: rgba(232, 0, 13, 0.18);
+  color: #aa000a;
 }
 
 .lab-card h3 {
