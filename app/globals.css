@@ -898,30 +898,31 @@ svg {
 
 .timeline-company > p {
   color: var(--accent);
-  font-size: 9px;
+  font-size: 10.5px;
   font-weight: 850;
   letter-spacing: 0.12em;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   text-transform: uppercase;
 }
 
 .timeline-company h3,
 .timeline-role h4 {
-  font-size: 15px;
+  font-size: 19px;
   letter-spacing: -0.01em;
 }
 
 .timeline-role h4 {
   font-family: var(--serif);
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 500;
+  line-height: 1.12;
 }
 
 .timeline-role p {
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-top: 12px;
   max-width: 700px;
 }
 
@@ -1377,6 +1378,22 @@ svg {
 
   .timeline-role {
     grid-column: 2;
+  }
+
+  .timeline-company > p {
+    font-size: 10px;
+  }
+
+  .timeline-company h3 {
+    font-size: 18px;
+  }
+
+  .timeline-role h4 {
+    font-size: 23px;
+  }
+
+  .timeline-role p {
+    font-size: 14.5px;
   }
 
   .education {
