@@ -677,14 +677,14 @@ svg {
 }
 
 .systems-section {
-  background: var(--ink);
+  background: var(--jayhawk-blue);
   color: var(--paper);
   overflow: hidden;
   position: relative;
 }
 
 .systems-section::after {
-  border: 1px solid rgba(198, 217, 111, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
   content: "";
   height: 760px;
@@ -705,11 +705,15 @@ svg {
 }
 
 .kicker-light {
-  color: var(--paper-deep);
+  color: var(--white);
 }
 
 .kicker-light::before {
   background: var(--lime);
+}
+
+.systems-section .kicker-light::before {
+  background: var(--accent);
 }
 
 .systems-title h2 {
@@ -721,7 +725,7 @@ svg {
 }
 
 .systems-copy > p {
-  color: rgba(242, 239, 231, 0.68);
+  color: rgba(255, 255, 255, 0.84);
   font-size: 16px;
   line-height: 1.72;
   margin-top: 24px;
@@ -744,7 +748,7 @@ svg {
 
 .principles span {
   align-items: center;
-  border-top: 1px solid var(--line-light);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   font-size: 14px;
   font-weight: 850;
@@ -755,7 +759,7 @@ svg {
 }
 
 .principles span::after {
-  color: var(--jayhawk-blue-pop);
+  color: var(--accent);
   content: "↗";
   font-size: 16px;
 }
