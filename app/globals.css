@@ -5,8 +5,9 @@
   --paper-deep: #e9e2d5;
   --accent: #ff8200;
   --accent-soft: #ffd0a3;
-  --lime: #71a9dd;
+  --lime: #1677e8;
   --jayhawk-blue: #0051ba;
+  --jayhawk-blue-pop: #1677e8;
   --jayhawk-crimson: #e8000d;
   --white: #fffdf8;
   --line: rgba(16, 43, 39, 0.18);
@@ -391,7 +392,7 @@ svg {
 
 .discipline-rail {
   align-items: center;
-  background: var(--jayhawk-blue);
+  background: linear-gradient(100deg, var(--jayhawk-blue) 0%, var(--jayhawk-blue-pop) 100%);
   color: var(--white);
   display: flex;
   gap: clamp(18px, 2.4vw, 38px);
@@ -458,7 +459,7 @@ svg {
 }
 
 .lab-card:nth-child(2) {
-  border-top-color: var(--jayhawk-blue);
+  border-top-color: var(--jayhawk-blue-pop);
 }
 
 .lab-card:nth-child(3) {
@@ -484,10 +485,10 @@ svg {
 }
 
 .lab-status {
-  background: rgba(0, 81, 186, 0.08);
-  border: 1px solid rgba(0, 81, 186, 0.18);
+  background: rgba(22, 119, 232, 0.09);
+  border: 1px solid rgba(22, 119, 232, 0.24);
   border-radius: 999px;
-  color: var(--jayhawk-blue);
+  color: #075abf;
   font-size: 9px;
   font-weight: 850;
   letter-spacing: 0.1em;
@@ -554,7 +555,7 @@ svg {
 }
 
 .lab-note {
-  border-left: 3px solid var(--jayhawk-blue);
+  border-left: 3px solid var(--jayhawk-blue-pop);
   color: var(--ink-soft);
   font-size: 12px;
   line-height: 1.55;
@@ -740,7 +741,7 @@ svg {
 }
 
 .principles span::after {
-  color: var(--lime);
+  color: var(--jayhawk-blue-pop);
   content: "↗";
   font-size: 16px;
 }
