@@ -367,8 +367,8 @@ svg {
 }
 
 .hero-aside dd {
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 .hero-note {
@@ -463,7 +463,7 @@ svg {
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
-  min-height: 620px;
+  min-height: 680px;
   padding: clamp(24px, 3vw, 38px);
   transition: border-color 180ms ease, transform 180ms ease;
 }
@@ -529,8 +529,8 @@ svg {
 
 .lab-summary {
   color: var(--ink-soft);
-  font-size: 14px;
-  line-height: 1.62;
+  font-size: 16px;
+  line-height: 1.65;
   margin-top: 20px;
 }
 
@@ -554,8 +554,8 @@ svg {
 }
 
 .lab-card dd {
-  font-size: 12px;
-  line-height: 1.58;
+  font-size: 16px;
+  line-height: 1.62;
   margin-top: 7px;
 }
 
@@ -672,7 +672,8 @@ svg {
 
 .outcome-card p {
   color: var(--ink-soft);
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 1.55;
   margin-top: 7px;
 }
 
@@ -843,8 +844,8 @@ svg {
 
 .case-detail dd {
   color: var(--ink-soft);
-  font-size: 14px;
-  line-height: 1.66;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .case-detail .case-result {
@@ -897,8 +898,8 @@ svg {
 
 .capability-grid p {
   color: var(--ink-soft);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.62;
   max-width: 330px;
 }
 
@@ -957,8 +958,8 @@ svg {
 
 .timeline-role p {
   color: var(--ink-soft);
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.62;
   margin-top: 12px;
   max-width: 700px;
 }
@@ -1430,7 +1431,7 @@ svg {
   }
 
   .timeline-role p {
-    font-size: 14.5px;
+    font-size: 16px;
   }
 
   .education {
