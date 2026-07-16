@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 
 const description =
-  "Adam Bogren builds better hiring systems through Talent Acquisition strategy, operations, data, structured hiring, and stakeholder accountability.";
+  "Adam Bogren combines Talent Acquisition expertise with AI, automation, data, and process design to build practical operating systems.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase,
     title: {
-      default: "Adam Bogren — Talent Acquisition Leader",
+      default: "Adam Bogren — Talent Acquisition, AI & Systems",
       template: "%s | Adam Bogren",
     },
     description,
@@ -30,14 +30,18 @@ export async function generateMetadata(): Promise<Metadata> {
       "Talent Acquisition Operations",
       "Recruiting Strategy",
       "Hiring Transformation",
+      "AI Enablement",
+      "Workflow Automation",
+      "Systems Thinking",
       "Nashville",
     ],
     authors: [{ name: "Adam Bogren" }],
     creator: "Adam Bogren",
     openGraph: {
-      title: "Adam Bogren — I build better hiring systems.",
+      title: "Adam Bogren — I build practical operating systems.",
       description:
-        "Talent Acquisition leadership at the intersection of strategy, operations, data, and stakeholder accountability.",
+        "Talent Acquisition expertise at the intersection of AI, automation, data, and process design.",
+      url: "https://adambogren.com",
       type: "website",
       locale: "en_US",
       images: [
@@ -45,20 +49,21 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1731,
           height: 909,
-          alt: "Adam Bogren — I build better hiring systems.",
+          alt: "Adam Bogren — Talent Acquisition, AI, automation, and systems thinking.",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Adam Bogren — Talent Acquisition Leader",
-      description: "I build better hiring systems.",
+      title: "Adam Bogren — Talent Acquisition, AI & Systems",
+      description: "I build practical operating systems.",
       images: [socialImage],
     },
     robots: {
       index: true,
       follow: true,
     },
+    alternates: { canonical: "https://adambogren.com" },
   };
 }
 

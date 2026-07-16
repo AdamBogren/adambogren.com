@@ -7,6 +7,48 @@ export const profile = {
   status: "Open to senior TA leadership and high-impact individual-contributor roles",
 };
 
+export const labProjects = [
+  {
+    index: "01",
+    status: "Active",
+    title: "Career Operating System",
+    summary:
+      "An AI-assisted workflow for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
+    problem:
+      "A high-volume search creates noise, duplicated effort, and decisions that are hard to revisit.",
+    approach:
+      "Separate discovery, verification, evaluation, decision, and learning into an auditable operating rhythm.",
+    next: "Continue improving selectivity, evidence quality, and unattended weekday execution.",
+    tags: ["AI workflow", "Decision support", "Governance"],
+  },
+  {
+    index: "02",
+    status: "Prototype",
+    title: "Raspberry Pi AI Server",
+    summary:
+      "An always-on home platform for scheduled workflows, health checks, logging, and future privacy-conscious automations.",
+    problem:
+      "Useful automations should not require a laptop, illuminated monitors, or a person remembering to start them.",
+    approach:
+      "Move repeatable work into a small, reliable server with clear logs and graceful failure handling.",
+    next: "Harden reliability, move the weekday search schedule, then add notifications.",
+    tags: ["Raspberry Pi", "Automation", "Observability"],
+  },
+  {
+    index: "03",
+    status: "Building",
+    title: "adambogren.com",
+    summary:
+      "The public front door to my career experience, practical AI experiments, and the lessons connecting them.",
+    problem:
+      "A resume can summarize outcomes, but it cannot fully show how someone thinks, builds, and learns.",
+    approach:
+      "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
+    next: "Publish the MVP, connect the custom domain, and add deeper case studies as the work matures.",
+    tags: ["Portfolio", "Product thinking", "Documentation"],
+  },
+];
+
 export const outcomes = [
   {
     value: "57 → 99%",

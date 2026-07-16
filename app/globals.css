@@ -1,11 +1,13 @@
 :root {
-  --ink: #102b27;
-  --ink-soft: #31524c;
-  --paper: #f2efe7;
-  --paper-deep: #e8e2d6;
-  --accent: #d85634;
-  --accent-soft: #edb68f;
-  --lime: #c6d96f;
+  --ink: #17243a;
+  --ink-soft: #435269;
+  --paper: #f5f0e6;
+  --paper-deep: #e9e2d5;
+  --accent: #ff8200;
+  --accent-soft: #ffd0a3;
+  --lime: #71a9dd;
+  --jayhawk-blue: #0051ba;
+  --jayhawk-crimson: #e8000d;
   --white: #fffdf8;
   --line: rgba(16, 43, 39, 0.18);
   --line-light: rgba(255, 253, 248, 0.2);
@@ -65,7 +67,7 @@ svg {
 .site-header {
   align-items: center;
   backdrop-filter: blur(16px);
-  background: rgba(242, 239, 231, 0.88);
+  background: rgba(245, 240, 230, 0.9);
   border-bottom: 1px solid var(--line);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -109,6 +111,10 @@ svg {
   align-items: center;
   display: flex;
   gap: 28px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .main-nav a {
@@ -418,10 +424,126 @@ svg {
 }
 
 .outcomes,
+.lab,
 .work,
 .experience {
   padding-bottom: clamp(90px, 11vw, 160px);
   padding-top: clamp(90px, 11vw, 160px);
+}
+
+.lab-heading {
+  margin-bottom: 42px;
+}
+
+.lab-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lab-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 620px;
+  padding: clamp(24px, 3vw, 38px);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.lab-card:nth-child(2) {
+  border-top-color: var(--jayhawk-blue);
+}
+
+.lab-card:nth-child(3) {
+  border-top-color: var(--jayhawk-crimson);
+}
+
+.lab-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.lab-card-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lab-index {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+}
+
+.lab-status {
+  background: rgba(0, 81, 186, 0.08);
+  border: 1px solid rgba(0, 81, 186, 0.18);
+  border-radius: 999px;
+  color: var(--jayhawk-blue);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  padding: 7px 9px;
+  text-transform: uppercase;
+}
+
+.lab-card h3 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin-top: 54px;
+}
+
+.lab-summary {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.62;
+  margin-top: 20px;
+}
+
+.lab-card dl {
+  display: grid;
+  gap: 17px;
+  margin-top: 34px;
+}
+
+.lab-card dl div {
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+}
+
+.lab-card dt {
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.lab-card dd {
+  font-size: 12px;
+  line-height: 1.58;
+  margin-top: 7px;
+}
+
+.lab-card .case-tags {
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.lab-note {
+  border-left: 3px solid var(--jayhawk-blue);
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.55;
+  margin-top: 28px;
+  max-width: 760px;
+  padding: 5px 0 5px 16px;
 }
 
 .section-heading {
@@ -961,7 +1083,7 @@ svg {
 
 .site-footer {
   align-items: center;
-  background: #0b201d;
+  background: #101c30;
   border-top: 1px solid rgba(242, 239, 231, 0.12);
   color: var(--paper);
   display: grid;
@@ -1067,6 +1189,14 @@ svg {
     grid-template-columns: 1fr 1fr;
   }
 
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-card {
+    min-height: auto;
+  }
+
   .outcome-card:last-child {
     grid-column: 1 / -1;
   }
@@ -1109,6 +1239,36 @@ svg {
 
   .header-link {
     padding: 9px 12px;
+  }
+
+  .mobile-nav {
+    align-items: center;
+    backdrop-filter: blur(16px);
+    background: rgba(23, 36, 58, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    bottom: 12px;
+    color: var(--paper);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: 12px;
+    padding: 5px;
+    position: fixed;
+    right: 12px;
+    z-index: 60;
+  }
+
+  .mobile-nav a {
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 750;
+    padding: 11px 5px;
+    text-align: center;
+  }
+
+  .mobile-nav a:active {
+    background: var(--accent);
+    color: var(--white);
   }
 
   .hero {
@@ -1226,6 +1386,7 @@ svg {
   .site-footer {
     gap: 24px;
     grid-template-columns: 1fr auto;
+    padding-bottom: 82px;
   }
 
   .site-footer > p {
@@ -1254,6 +1415,7 @@ svg {
 
 @media print {
   .site-header,
+  .mobile-nav,
   .hero-actions,
   .discipline-rail,
   .contact,

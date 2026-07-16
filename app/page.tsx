@@ -2,6 +2,7 @@ import {
   capabilities,
   caseStudies,
   experience,
+  labProjects,
   outcomes,
   profile,
 } from "@/data/profile";
@@ -16,14 +17,6 @@ function ArrowUpRight({ className = "" }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M5 15 15 5M7 5h8v8" stroke="currentColor" strokeLinecap="round" strokeWidth="1.6" />
-    </svg>
-  );
-}
-
-function LinkedinMark() {
-  return (
-    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M6.94 8.5H3.56V19h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92A1.96 1.96 0 0 0 5.25 3ZM20.44 12.98c0-3.16-1.68-4.63-3.93-4.63-1.8 0-2.61.99-3.07 1.69V8.5h-3.38c.04 1.02 0 10.5 0 10.5h3.38v-5.86c0-.31.02-.63.11-.85.25-.63.82-1.28 1.77-1.28 1.25 0 1.75.96 1.75 2.36V19h3.37v-6.02Z" />
     </svg>
   );
 }
@@ -50,6 +43,8 @@ const personSchema = {
     "Hiring Strategy",
     "Structured Interviewing",
     "Recruiting Analytics",
+    "AI Workflow Design",
+    "Process Automation",
   ],
 };
 
@@ -68,10 +63,10 @@ export default function Home() {
         </a>
 
         <nav aria-label="Primary navigation" className="main-nav">
-          <a href="#work">Work</a>
-          <a href="#capabilities">Capabilities</a>
-          <a href="#experience">Experience</a>
+          <a href="#lab">AI Lab</a>
+          <a href="#work">Career</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <a
@@ -85,32 +80,34 @@ export default function Home() {
         </a>
       </header>
 
+      <nav aria-label="Mobile navigation" className="mobile-nav">
+        <a href="#lab">AI Lab</a>
+        <a href="#work">Career</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <section className="hero" id="top">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow animate-in">Talent Acquisition · Strategy · Operations</p>
+          <p className="eyebrow animate-in">Talent Acquisition · AI · Systems</p>
           <h1 className="animate-in animate-delay-1">
-            I build better
-            <span> hiring systems.</span>
+            I build practical
+            <span> operating systems.</span>
           </h1>
           <p className="hero-intro animate-in animate-delay-2">
-            I’m Adam Bogren. I connect recruiting strategy, data, process,
-            technology, and stakeholder behavior so organizations can hire with
-            greater speed, consistency, and confidence.
+            I’m Adam Bogren. My background is Talent Acquisition. My current
+            work combines that expertise with AI, automation, data, and process
+            design to improve decisions, reduce manual work, and make complex
+            work easier to run.
           </p>
           <div className="hero-actions animate-in animate-delay-3">
-            <a className="button button-primary" href="#work">
-              Explore my work
+            <a className="button button-primary" href="#lab">
+              Explore Adam&apos;s AI Lab
               <span aria-hidden="true">↓</span>
             </a>
-            <a
-              className="button button-secondary"
-              href={profile.linkedin}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <LinkedinMark />
-              Connect on LinkedIn
+            <a className="button button-secondary" href="#work">
+              View my career experience
             </a>
           </div>
         </div>
@@ -124,7 +121,7 @@ export default function Home() {
           <dl>
             <div>
               <dt>Focus</dt>
-              <dd>Leadership · Operations · Transformation</dd>
+              <dd>TA leadership · AI enablement · Transformation</dd>
             </div>
             <div>
               <dt>Based</dt>
@@ -132,27 +129,27 @@ export default function Home() {
             </div>
             <div>
               <dt>Known for</dt>
-              <dd>Practical systems that earn business trust</dd>
+              <dd>Practical systems that earn human trust</dd>
             </div>
           </dl>
         </aside>
 
         <div className="hero-note animate-in animate-delay-3">
           <span>01</span>
-          <p>I’m at my best when hiring is messy, important, and fixable.</p>
+          <p>I’m at my best when the problem is messy, important, and fixable.</p>
         </div>
       </section>
 
       <div className="discipline-rail" aria-label="Areas of expertise">
-        <span>Recruiting strategy</span>
+        <span>Talent Acquisition</span>
         <i aria-hidden="true" />
-        <span>TA operations</span>
+        <span>AI workflows</span>
         <i aria-hidden="true" />
-        <span>Data credibility</span>
+        <span>Automation</span>
         <i aria-hidden="true" />
-        <span>Structured hiring</span>
+        <span>Decision quality</span>
         <i aria-hidden="true" />
-        <span>Stakeholder accountability</span>
+        <span>Systems thinking</span>
       </div>
 
       <section className="outcomes section-shell" aria-labelledby="outcomes-heading">
@@ -182,36 +179,84 @@ export default function Home() {
         <div className="section-shell systems-layout">
           <div className="systems-title">
             <p className="kicker kicker-light">How I think</p>
-            <h2 id="systems-heading">Hiring problems are systems problems.</h2>
+            <h2 id="systems-heading">Operating problems are systems problems.</h2>
           </div>
           <div className="systems-copy">
             <p className="lead">
-              Hiring breaks down where priorities, data, process, technology, and
-              decision-making stop lining up.
+              Most operating problems break down where priorities, data,
+              process, technology, and decision-making stop lining up.
             </p>
             <p>
-              My work makes those connections visible, then turns them into
-              practical operating habits: trustworthy vacancy data, clearer
-              priorities, capable recruiters, accountable hiring managers, and
-              decisions people can explain.
+              My Talent Acquisition work taught me to make those connections
+              visible. Adam&apos;s AI Lab extends the same discipline into practical
+              experiments: trustworthy inputs, clear ownership, useful
+              automation, human judgment, and decisions people can explain.
             </p>
             <div className="principles">
               <span>Make the data trustworthy</span>
               <span>Create operating discipline</span>
-              <span>Improve hiring decisions</span>
-              <span>Connect TA to the business</span>
+              <span>Keep humans accountable</span>
+              <span>Document what changes</span>
             </div>
           </div>
         </div>
       </section>
 
+      <section className="lab section-shell" id="lab" aria-labelledby="lab-heading">
+        <div className="section-heading lab-heading">
+          <div>
+            <p className="kicker">Adam&apos;s AI Lab</p>
+            <h2 id="lab-heading">Real problems. Practical experiments.</h2>
+          </div>
+          <p>
+            The lab is where I apply AI, automation, and systems thinking to work
+            and home problems that actually matter. Status labels are deliberate:
+            this is a record of progress, not a showroom of imaginary products.
+          </p>
+        </div>
+
+        <div className="lab-grid">
+          {labProjects.map((project) => (
+            <article className="lab-card" key={project.index}>
+              <div className="lab-card-top">
+                <span className="lab-index">{project.index}</span>
+                <span className="lab-status">{project.status}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <p className="lab-summary">{project.summary}</p>
+              <dl>
+                <div>
+                  <dt>The problem</dt>
+                  <dd>{project.problem}</dd>
+                </div>
+                <div>
+                  <dt>The approach</dt>
+                  <dd>{project.approach}</dd>
+                </div>
+                <div>
+                  <dt>Next</dt>
+                  <dd>{project.next}</dd>
+                </div>
+              </dl>
+              <div className="case-tags" aria-label="Project themes">
+                {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="lab-note">
+          Built in the open, shared responsibly. Sensitive job-search, family,
+          home-network, and security details stay private.
+        </p>
+      </section>
+
       <section className="work section-shell" id="work" aria-labelledby="work-heading">
         <div className="section-heading work-heading">
           <div>
-            <p className="kicker">Selected work</p>
-            <h2 id="work-heading">The work behind the outcomes.</h2>
+            <p className="kicker">Career evidence</p>
+            <h2 id="work-heading">Talent Acquisition is the proving ground.</h2>
           </div>
-          <p>Three examples of building clarity, capability, and momentum in complex hiring environments.</p>
+          <p>Three examples of building clarity, capability, and momentum in complex hiring environments—the foundation beneath the lab.</p>
         </div>
 
         <div className="case-list">
@@ -322,6 +367,11 @@ export default function Home() {
               I value direct communication, practical solutions, and process that
               solves a real problem—not process theater.
             </p>
+            <p>
+              Adam&apos;s AI Lab is a natural extension of that work: a place to test
+              how AI and automation can support better operating systems while
+              keeping evidence, privacy, and human accountability intact.
+            </p>
             <div className="education">
               <div>
                 <span>MBA</span>
@@ -336,16 +386,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact" aria-labelledby="contact-heading">
+      <section className="contact" id="contact" aria-labelledby="contact-heading">
         <div className="contact-orbit orbit-one" aria-hidden="true" />
         <div className="contact-orbit orbit-two" aria-hidden="true" />
         <div className="section-shell contact-inner">
           <p className="kicker kicker-light">Start a conversation</p>
-          <h2 id="contact-heading">Let’s make hiring work better.</h2>
+          <h2 id="contact-heading">Let’s make complex work better.</h2>
           <p>
-            If you’re building, scaling, or improving a Talent Acquisition
-            function—and need someone who can connect strategy to the operating
-            details—I’d welcome a conversation.
+            If you’re improving Talent Acquisition, exploring responsible AI
+            enablement, or need someone who can connect strategy to operating
+            details, I’d welcome a conversation.
           </p>
           <a
             className="contact-link"
@@ -364,7 +414,7 @@ export default function Home() {
           <span className="brand-mark brand-mark-footer">{profile.shortName}</span>
           <div>
             <strong>{profile.name}</strong>
-            <p>Talent Acquisition Leadership · Operations · Transformation</p>
+            <p>Talent Acquisition · AI enablement · Systems thinking</p>
           </div>
         </div>
         <p>Nashville, Tennessee</p>
