@@ -82,7 +82,7 @@ export const caseStudies = [
   },
   {
     index: "02",
-    company: "Holcim / Holcim Building Envelope",
+    company: "Firestone Building Products",
     title: "Building Talent Acquisition through business change",
     situation:
       "A major business transition and the integration of six acquisitions created new demands for recruiting capacity, consistency, and coordination.",
@@ -142,7 +142,7 @@ export const experience = [
       "Led work across recruiting strategy, vacancy data, process improvement, structured hiring, sourcing, systems, and stakeholder expectations in a complex global business.",
   },
   {
-    company: "Holcim / Holcim Building Envelope",
+    company: "Firestone Building Products",
     role: "Director & Manager, Talent Acquisition",
     period: "Leadership",
     summary:

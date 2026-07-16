@@ -206,7 +206,7 @@ export default function Home() {
         <div className="section-heading lab-heading">
           <div>
             <p className="kicker">Adam&apos;s AI Lab</p>
-            <h2 id="lab-heading">Real problems. Practical experiments.</h2>
+            <h2 id="lab-heading">Real problems. Practical solutions.</h2>
           </div>
           <p>
             The lab is where I apply AI, automation, and systems thinking to work
