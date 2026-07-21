@@ -238,6 +238,17 @@ export default function Home() {
                   <dd>{project.next}</dd>
                 </div>
               </dl>
+              {project.sourceUrl && (
+                <a
+                  className="project-source-link"
+                  href={project.sourceUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  View source on GitHub
+                  <ArrowUpRight />
+                </a>
+              )}
               <div className="case-tags" aria-label="Project themes">
                 {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
               </div>

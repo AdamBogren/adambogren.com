@@ -19,6 +19,7 @@ export const labProjects = [
     approach:
       "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
     next: "Publish the MVP, connect the custom domain, and add deeper case studies as the work matures.",
+    sourceUrl: "https://github.com/AdamBogren/adambogren.com",
     tags: ["Portfolio", "Product thinking", "Documentation"],
   },
   {
@@ -32,6 +33,7 @@ export const labProjects = [
     approach:
       "Separate discovery, verification, evaluation, decision, and learning into an auditable operating rhythm.",
     next: "Continue improving selectivity, evidence quality, and unattended weekday execution.",
+    sourceUrl: null,
     tags: ["AI workflow", "Decision support", "Governance"],
   },
   {
@@ -45,6 +47,7 @@ export const labProjects = [
     approach:
       "Move repeatable work into a small, reliable server with clear logs and graceful failure handling.",
     next: "Harden reliability, move the weekday search schedule, then add notifications.",
+    sourceUrl: null,
     tags: ["Raspberry Pi", "Automation", "Observability"],
   },
 ];

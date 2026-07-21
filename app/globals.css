@@ -559,6 +559,30 @@ svg {
   margin-top: 7px;
 }
 
+.project-source-link {
+  align-items: center;
+  align-self: flex-start;
+  border-bottom: 1px solid rgba(0, 81, 186, 0.28);
+  color: var(--jayhawk-blue);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 7px;
+  min-height: 44px;
+  padding-top: 14px;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.project-source-link svg {
+  height: 16px;
+  width: 16px;
+}
+
+.project-source-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .lab-card .case-tags {
   margin-top: auto;
   padding-top: 30px;

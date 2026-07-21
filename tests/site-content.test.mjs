@@ -17,6 +17,7 @@ test("keeps the career foundation and adds the AI Lab positioning", async () => 
   assert.match(profile, /Career Operating System/);
   assert.match(profile, /Raspberry Pi AI Server/);
   assert.match(profile, /adambogren\.com/);
+  assert.match(profile, /https:\/\/github\.com\/AdamBogren\/adambogren\.com/);
   assert.match(layout, /https:\/\/adambogren\.com/);
 });
 
