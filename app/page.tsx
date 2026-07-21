@@ -210,7 +210,7 @@ export default function Home() {
           </div>
           <p>
             The lab is where I apply AI, automation, and systems thinking to work
-            and home problems that actually matter. Status labels are deliberate:
+            and everyday life challenges that actually matter. Status labels are deliberate:
             this is a record of progress, not a showroom of imaginary products.
           </p>
         </div>
