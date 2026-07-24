@@ -137,7 +137,10 @@ export default function Home() {
 
         <div className="hero-note animate-in animate-delay-3">
           <span>01</span>
-          <p>I’m at my best when the problem is messy, important, and fixable.</p>
+          <div>
+            <strong>Be the best today. How can we be better tomorrow?</strong>
+            <p>Deliver. Measure. Learn. Improve. Repeat.</p>
+          </div>
         </div>
       </section>
 
@@ -286,13 +289,20 @@ export default function Home() {
           </div>
 
           <div className="dashboard-principles">
-            <blockquote>
-              “Automation should increase authenticity—not replace it.”
-            </blockquote>
-            <p>
-              Human judgment remains responsible for candidate relationships, context,
-              outreach approval, and hiring decisions.
-            </p>
+            <div>
+              <blockquote>
+                “Automation should increase authenticity—not replace it.”
+              </blockquote>
+              <p>
+                Human judgment remains responsible for candidate relationships, context,
+                outreach approval, and hiring decisions.
+              </p>
+            </div>
+            <div className="dashboard-operating-principle">
+              <span>Operating principle</span>
+              <strong>Be the best today. How can we be better tomorrow?</strong>
+              <p>Every result becomes evidence for the next iteration.</p>
+            </div>
           </div>
         </article>
 
@@ -311,14 +321,18 @@ export default function Home() {
                   <dd>{project.problem}</dd>
                 </div>
                 <div>
-                  <dt>The approach</dt>
+                  <dt>System</dt>
                   <dd>{project.approach}</dd>
                 </div>
                 <div>
-                  <dt>Next</dt>
+                  <dt>Next Iteration</dt>
                   <dd>{project.next}</dd>
                 </div>
               </dl>
+              <p className="project-principle">
+                <span>Operating principle</span>
+                Be the best today. How can we be better tomorrow?
+              </p>
               {project.sourceUrl && (
                 <a
                   className="project-source-link"
@@ -339,9 +353,6 @@ export default function Home() {
         <p className="lab-note">
           Built in the open, shared responsibly. Sensitive job-search, family,
           home-network, and security details stay private.
-        </p>
-        <p className="lab-philosophy">
-          Be the best today. Then ask how we can be better tomorrow.
         </p>
       </section>
 
@@ -466,6 +477,10 @@ export default function Home() {
               Adam&apos;s AI Lab is a natural extension of that work: a place to test
               how AI and automation can support better operating systems while
               keeping evidence, privacy, and human accountability intact.
+            </p>
+            <p className="about-principle">
+              <span>My operating principle</span>
+              <strong>Be the best today. How can we be better tomorrow?</strong>
             </p>
             <div className="education">
               <div>

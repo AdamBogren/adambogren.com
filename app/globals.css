@@ -395,6 +395,28 @@ svg {
   line-height: 1.35;
 }
 
+.hero-note > div {
+  display: grid;
+  gap: 5px;
+}
+
+.hero-note strong {
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.hero-note div p {
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
 .discipline-rail {
   align-items: center;
   background: linear-gradient(100deg, var(--jayhawk-blue) 0%, var(--jayhawk-blue-pop) 100%);
@@ -557,6 +579,29 @@ svg {
   font-size: 16px;
   line-height: 1.62;
   margin-top: 7px;
+}
+
+.project-principle {
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.35;
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+.project-principle span {
+  color: var(--accent);
+  display: block;
+  font-family: var(--sans);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .project-source-link {
@@ -889,14 +934,36 @@ svg {
   line-height: 1.65;
 }
 
-.lab-philosophy {
-  color: var(--ink);
+.dashboard-principles > div:first-child > p {
+  margin-top: 14px;
+}
+
+.dashboard-operating-principle {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 38px;
+}
+
+.dashboard-operating-principle span,
+.about-principle span {
+  color: var(--accent-soft);
+  display: block;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.dashboard-operating-principle strong {
+  display: block;
   font-family: var(--serif);
-  font-size: clamp(24px, 3vw, 38px);
-  font-style: italic;
-  margin: 48px auto 0;
-  max-width: 720px;
-  text-align: center;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.dashboard-operating-principle p {
+  margin-top: 10px;
 }
 
 .section-heading {
@@ -1351,6 +1418,21 @@ svg {
   max-width: 700px;
 }
 
+.about-principle {
+  border-left: 3px solid var(--white);
+  margin-top: 36px !important;
+  padding-left: 20px;
+}
+
+.about-principle strong {
+  color: var(--white);
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(25px, 2.6vw, 36px);
+  font-weight: 500;
+  line-height: 1.18;
+}
+
 .education {
   border-top: 1px solid rgba(255, 253, 248, 0.3);
   display: grid;
@@ -1604,6 +1686,13 @@ svg {
   .dashboard-principles,
   .dashboard-story {
     grid-template-columns: 1fr;
+  }
+
+  .dashboard-operating-principle {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 0;
+    padding-top: 26px;
   }
 
   .dashboard-metric {
