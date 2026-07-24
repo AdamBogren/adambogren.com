@@ -1,5 +1,6 @@
 import {
   capabilities,
+  careerDashboard,
   caseStudies,
   experience,
   labProjects,
@@ -215,6 +216,86 @@ export default function Home() {
           </p>
         </div>
 
+        <article className="dashboard-feature" aria-labelledby="dashboard-title">
+          <div className="dashboard-intro">
+            <div>
+              <p className="dashboard-eyebrow">{careerDashboard.eyebrow}</p>
+              <h3 id="dashboard-title">{careerDashboard.title}</h3>
+              <p className="dashboard-subtitle">
+                {careerDashboard.subtitle} <span>· {careerDashboard.period}</span>
+              </p>
+            </div>
+            <p>{careerDashboard.summary}</p>
+          </div>
+
+          <div className="dashboard-panel">
+            <div className="dashboard-panel-heading">
+              <div>
+                <span>Executive decision view</span>
+                <strong>What the search is teaching me</strong>
+              </div>
+              <span className="dashboard-live"><i /> Active system</span>
+            </div>
+
+            <div className="dashboard-metrics">
+              {careerDashboard.metrics.map((metric) => (
+                <div className={`dashboard-metric metric-${metric.tone}`} key={metric.label}>
+                  <strong>{metric.value}</strong>
+                  <span>{metric.label}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="dashboard-lower">
+              <div className="dashboard-flow" aria-label="Career Operating System workflow">
+                <p>Operating rhythm</p>
+                {careerDashboard.flow.map((step, index) => (
+                  <div className="flow-step" key={step.label}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <div>
+                      <strong>{step.label}</strong>
+                      <small>{step.note}</small>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="dashboard-rates">
+                <p>Decision quality</p>
+                {careerDashboard.rates.map((rate) => (
+                  <div key={rate.label}>
+                    <span>{rate.label}</span>
+                    <strong>{rate.value}</strong>
+                  </div>
+                ))}
+                <p className="dashboard-source-note">
+                  Current privacy-safe snapshot. The working dashboard remains live and
+                  protected; sensitive employer and application details are not published.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="dashboard-story">
+            {careerDashboard.story.map((item, index) => (
+              <div className="story-step" key={item.label}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <h4>{item.label}</h4>
+                <p>{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="dashboard-principles">
+            <blockquote>
+              “Automation should increase authenticity—not replace it.”
+            </blockquote>
+            <p>
+              Human judgment remains responsible for candidate relationships, context,
+              outreach approval, and hiring decisions.
+            </p>
+          </div>
+        </article>
+
         <div className="lab-grid">
           {labProjects.map((project) => (
             <article className="lab-card" key={project.index}>
@@ -258,6 +339,9 @@ export default function Home() {
         <p className="lab-note">
           Built in the open, shared responsibly. Sensitive job-search, family,
           home-network, and security details stay private.
+        </p>
+        <p className="lab-philosophy">
+          Be the best today. Then ask how we can be better tomorrow.
         </p>
       </section>
 

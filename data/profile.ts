@@ -52,6 +52,60 @@ export const labProjects = [
   },
 ];
 
+export const careerDashboard = {
+  eyebrow: "Featured system · Live operating evidence",
+  title: "Career Operating System",
+  subtitle: "2026 Review Dashboard",
+  period: "June 2026–present",
+  summary:
+    "A working decision system for finding, verifying, evaluating, and learning from job opportunities—without handing judgment over to the machine.",
+  metrics: [
+    { value: "143", label: "Roles assessed", tone: "navy" },
+    { value: "52", label: "Qualified / advanced", tone: "blue" },
+    { value: "58", label: "Intentionally skipped", tone: "orange" },
+    { value: "32", label: "Closed / removed", tone: "crimson" },
+  ],
+  rates: [
+    { value: "35.9%", label: "Application rate" },
+    { value: "36.4%", label: "Qualified lead rate" },
+    { value: "99.3%", label: "Decision coverage" },
+  ],
+  flow: [
+    { label: "Discovery", note: "Find potential opportunities" },
+    { label: "Verification", note: "Confirm the official source" },
+    { label: "Evaluation", note: "Assess fit, risk, and evidence" },
+    { label: "Decision", note: "Advance, skip, or close" },
+    { label: "Learning", note: "Use outcomes to improve the system" },
+  ],
+  story: [
+    {
+      label: "Problem",
+      body:
+        "A conventional application tracker records submissions, but loses the roles researched, rejected, closed, or repeatedly resurfaced.",
+    },
+    {
+      label: "System",
+      body:
+        "Separate discovery, official-source verification, evaluation, decision, and learning into an auditable operating rhythm.",
+    },
+    {
+      label: "Evidence",
+      body:
+        "The dashboard measures every verified opportunity and preserves the reason behind nearly every decision—not just applications.",
+    },
+    {
+      label: "Outcome",
+      body:
+        "Less duplicated review, more consistent decisions, and a feedback loop that makes rejected opportunities useful data.",
+    },
+    {
+      label: "Next Iteration",
+      body:
+        "Extend the same approach to AI-assisted candidate intelligence, thoughtful outreach preparation, and proactive relationship pipelines.",
+    },
+  ],
+};
+
 export const outcomes = [
   {
     value: "57 → 99%",
