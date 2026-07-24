@@ -853,12 +853,13 @@ svg {
   border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
-  padding: 17px 0;
+  padding: 19px 0;
 }
 
 .dashboard-rates > div span {
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.45;
 }
 
 .dashboard-rates > div strong {
