@@ -636,11 +636,11 @@ svg {
 .lab-note {
   border-left: 3px solid var(--jayhawk-blue-pop);
   color: var(--ink-soft);
-  font-size: 12px;
-  line-height: 1.55;
-  margin-top: 28px;
-  max-width: 760px;
-  padding: 5px 0 5px 16px;
+  font-size: 15px;
+  line-height: 1.65;
+  margin-top: 34px;
+  max-width: 900px;
+  padding: 8px 0 8px 18px;
 }
 
 .dashboard-feature {
@@ -1436,24 +1436,24 @@ svg {
 .education {
   border-top: 1px solid rgba(255, 253, 248, 0.3);
   display: grid;
-  gap: 12px;
+  gap: 28px;
   grid-template-columns: 1fr 1fr;
   margin-top: 46px;
-  padding-top: 22px;
+  padding-top: 28px;
 }
 
 .education span {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 850;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .education p {
-  color: rgba(255, 253, 248, 0.7);
-  font-size: 12px;
-  line-height: 1.5;
-  margin-top: 6px;
+  color: rgba(255, 253, 248, 0.86);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-top: 8px;
 }
 
 .contact {
@@ -1534,7 +1534,7 @@ svg {
   color: var(--paper);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  padding: 28px clamp(24px, 5vw, 76px);
+  padding: 36px clamp(24px, 5vw, 76px);
 }
 
 .site-footer > div {
@@ -1546,19 +1546,19 @@ svg {
 .brand-mark-footer {
   background: var(--paper);
   color: var(--ink);
-  height: 34px;
-  width: 34px;
+  height: 40px;
+  width: 40px;
 }
 
 .site-footer strong {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .site-footer p {
-  color: rgba(242, 239, 231, 0.55);
-  font-size: 10px;
+  color: rgba(242, 239, 231, 0.72);
+  font-size: 13px;
   letter-spacing: 0.04em;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .site-footer > p {
@@ -1566,7 +1566,7 @@ svg {
 }
 
 .site-footer > a {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 750;
   justify-self: end;
 }
