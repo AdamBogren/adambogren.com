@@ -428,8 +428,10 @@ export default function Home() {
             <h2 id="experience-heading">Where I’ve contributed.</h2>
           </div>
           <p>
-            A career spanning corporate, production, technical, frontline, and
-            leadership hiring—moving from execution into function building and transformation.
+            A career that began in third-party agency recruiting on straight
+            commission, then expanded across corporate, production, technical,
+            frontline, and leadership hiring—from individual execution to
+            function building and transformation.
           </p>
         </div>
         <div className="timeline">
