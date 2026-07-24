@@ -819,7 +819,7 @@ svg {
   display: grid;
   gap: 14px;
   grid-template-columns: 28px 1fr;
-  padding: 15px 0;
+  padding: 19px 0;
 }
 
 .flow-step:last-child {
@@ -839,12 +839,13 @@ svg {
 }
 
 .flow-step strong {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .flow-step small {
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 15px;
+  line-height: 1.45;
 }
 
 .dashboard-rates > div {
@@ -882,7 +883,7 @@ svg {
 
 .story-step {
   border-left: 1px solid var(--line);
-  padding: 5px 20px 5px 22px;
+  padding: 7px 24px 9px 26px;
 }
 
 .story-step:first-child {
@@ -898,16 +899,16 @@ svg {
 
 .story-step h4 {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
-  margin-top: 9px;
+  margin-top: 11px;
 }
 
 .story-step p {
   color: var(--ink-soft);
-  font-size: 12px;
-  line-height: 1.58;
-  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 14px;
 }
 
 .dashboard-principles {
