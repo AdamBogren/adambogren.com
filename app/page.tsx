@@ -49,7 +49,46 @@ const personSchema = {
   ],
 };
 
-export default function Home() {
+type DashboardSnapshot = {
+  updatedAt: string;
+  metrics: typeof careerDashboard.metrics;
+  rates: typeof careerDashboard.rates;
+};
+
+const dashboardSnapshotUrl =
+  "https://raw.githubusercontent.com/AdamBogren/adambogren.com/main/public/career-dashboard.json";
+
+async function getDashboardSnapshot(): Promise<DashboardSnapshot> {
+  try {
+    const response = await fetch(dashboardSnapshotUrl, {
+      headers: { Accept: "application/json" },
+      next: { revalidate: 300 },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Dashboard snapshot request failed with ${response.status}`);
+    }
+
+    return (await response.json()) as DashboardSnapshot;
+  } catch {
+    return {
+      updatedAt: "2026-07-27T20:18:40-05:00",
+      metrics: careerDashboard.metrics,
+      rates: careerDashboard.rates,
+    };
+  }
+}
+
+function formatDashboardUpdate(updatedAt: string) {
+  return new Intl.DateTimeFormat("en-US", {
+    dateStyle: "medium",
+    timeZone: "America/Chicago",
+  }).format(new Date(updatedAt));
+}
+
+export default async function Home() {
+  const dashboardSnapshot = await getDashboardSnapshot();
+
   return (
     <main>
       <script
@@ -237,11 +276,11 @@ export default function Home() {
                 <span>Executive decision view</span>
                 <strong>What the search is teaching me</strong>
               </div>
-              <span className="dashboard-live"><i /> Active system</span>
+              <span className="dashboard-live"><i /> Automatically refreshed</span>
             </div>
 
             <div className="dashboard-metrics">
-              {careerDashboard.metrics.map((metric) => (
+              {dashboardSnapshot.metrics.map((metric) => (
                 <div className={`dashboard-metric metric-${metric.tone}`} key={metric.label}>
                   <strong>{metric.value}</strong>
                   <span>{metric.label}</span>
@@ -264,15 +303,16 @@ export default function Home() {
               </div>
               <div className="dashboard-rates">
                 <p>Decision quality</p>
-                {careerDashboard.rates.map((rate) => (
+                {dashboardSnapshot.rates.map((rate) => (
                   <div key={rate.label}>
                     <span>{rate.label}</span>
                     <strong>{rate.value}</strong>
                   </div>
                 ))}
                 <p className="dashboard-source-note">
-                  Current privacy-safe snapshot. The working dashboard remains live and
-                  protected; sensitive employer and application details are not published.
+                  Aggregate results refreshed after completed review runs. Last updated{" "}
+                  {formatDashboardUpdate(dashboardSnapshot.updatedAt)}. Employer and
+                  application details remain private.
                 </p>
               </div>
             </div>

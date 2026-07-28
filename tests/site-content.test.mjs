@@ -29,3 +29,28 @@ test("does not publish sensitive home-security implementation details", async ()
   assert.doesNotMatch(source, /Ring event|camera feed|IP address|API key|access token/i);
   assert.match(source, /security details stay private/);
 });
+
+test("publishes only privacy-safe career dashboard aggregates", async () => {
+  const snapshot = JSON.parse(
+    await readFile(new URL("public/career-dashboard.json", root), "utf8"),
+  );
+  const source = JSON.stringify(snapshot);
+
+  assert.deepEqual(
+    snapshot.metrics.map(({ label }) => label),
+    [
+      "Roles assessed",
+      "Qualified / advanced",
+      "Intentionally skipped",
+      "Closed / removed",
+    ],
+  );
+  assert.deepEqual(
+    snapshot.rates.map(({ label }) => label),
+    ["Application rate", "Qualified lead rate", "Decision coverage"],
+  );
+  assert.doesNotMatch(
+    source,
+    /company|employer|job title|application link|salary|skip reason|notes/i,
+  );
+});

@@ -60,15 +60,15 @@ export const careerDashboard = {
   summary:
     "A working decision system for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
   metrics: [
-    { value: "143", label: "Roles assessed", tone: "navy" },
-    { value: "52", label: "Qualified / advanced", tone: "blue" },
-    { value: "58", label: "Intentionally skipped", tone: "orange" },
+    { value: "149", label: "Roles assessed", tone: "navy" },
+    { value: "56", label: "Qualified / advanced", tone: "blue" },
+    { value: "61", label: "Intentionally skipped", tone: "orange" },
     { value: "32", label: "Closed / removed", tone: "crimson" },
   ],
   rates: [
-    { value: "35.9%", label: "Application rate" },
-    { value: "36.4%", label: "Qualified lead rate" },
-    { value: "99.3%", label: "Decision coverage" },
+    { value: "36.7%", label: "Application rate" },
+    { value: "37.6%", label: "Qualified lead rate" },
+    { value: "100.0%", label: "Decision coverage" },
   ],
   flow: [
     { label: "Discovery", note: "Find potential opportunities" },
