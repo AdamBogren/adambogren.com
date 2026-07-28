@@ -94,7 +94,7 @@ svg {
   border-radius: 50%;
   color: var(--paper);
   display: inline-flex;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   height: 38px;
   justify-content: center;
@@ -322,7 +322,7 @@ svg {
 .status-line {
   align-items: center;
   display: flex;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   gap: 9px;
   letter-spacing: 0.11em;
@@ -383,7 +383,7 @@ svg {
 
 .hero-note span {
   color: var(--accent);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -410,7 +410,7 @@ svg {
 .hero-note div p {
   color: var(--ink-soft);
   font-family: var(--sans);
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 0.11em;
@@ -430,7 +430,7 @@ svg {
 }
 
 .discipline-rail span {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -511,7 +511,7 @@ svg {
 
 .lab-index {
   color: var(--accent);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.14em;
 }
@@ -521,7 +521,7 @@ svg {
   border: 1px solid rgba(22, 119, 232, 0.24);
   border-radius: 999px;
   color: #075abf;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.1em;
   padding: 7px 9px;
@@ -713,7 +713,7 @@ svg {
 .dashboard-live {
   align-items: center;
   display: flex;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   gap: 8px;
   letter-spacing: 0.08em;
@@ -849,7 +849,7 @@ svg {
 
 .dashboard-source-note {
   color: var(--ink-soft);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.55;
   margin-top: 20px;
 }
@@ -927,7 +927,7 @@ svg {
 .about-principle span {
   color: var(--accent-soft);
   display: block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.13em;
   margin-bottom: 9px;
@@ -1018,7 +1018,7 @@ svg {
 .card-index,
 .capability-grid article > span {
   color: var(--accent);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.14em;
 }
@@ -1156,7 +1156,7 @@ svg {
 
 .case-number {
   color: var(--accent);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.12em;
   padding-top: 5px;
@@ -1190,7 +1190,7 @@ svg {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink-soft);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   padding: 8px 10px;
 }
@@ -1300,7 +1300,7 @@ svg {
   border-radius: 50%;
   color: var(--paper);
   display: flex;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 850;
   height: 38px;
   justify-content: center;
@@ -1310,7 +1310,7 @@ svg {
 
 .timeline-company > p {
   color: var(--accent);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.12em;
   margin-bottom: 11px;
@@ -1781,7 +1781,7 @@ svg {
 
   .mobile-nav a {
     border-radius: 999px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 750;
     padding: 11px 5px;
     text-align: center;
@@ -1901,7 +1901,7 @@ svg {
   }
 
   .timeline-company > p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .timeline-company h3 {
