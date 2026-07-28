@@ -569,9 +569,10 @@ svg {
 
 .lab-card dt {
   color: var(--ink-soft);
-  font-size: 9px;
+  font-size: clamp(12px, 0.9vw, 14px);
   font-weight: 850;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
@@ -1736,6 +1737,10 @@ svg {
   .site-header {
     height: 66px;
     padding: 0 20px;
+  }
+
+  .lab-card dt {
+    font-size: 13px;
   }
 
   .brand-name {
