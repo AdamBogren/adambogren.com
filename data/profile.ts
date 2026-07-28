@@ -58,7 +58,7 @@ export const careerDashboard = {
   subtitle: "2026 Review Dashboard",
   period: "June 2026–present",
   summary:
-    "A working decision system for finding, verifying, evaluating, and learning from job opportunities—without handing judgment over to the machine.",
+    "A working decision system for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
   metrics: [
     { value: "143", label: "Roles assessed", tone: "navy" },
     { value: "52", label: "Qualified / advanced", tone: "blue" },
@@ -91,7 +91,7 @@ export const careerDashboard = {
     {
       label: "Evidence",
       body:
-        "The dashboard measures every verified opportunity and preserves the reason behind nearly every decision—not just applications.",
+        "The dashboard measures every verified opportunity and preserves the reason behind nearly every decision, not just applications.",
     },
     {
       label: "Outcome",
@@ -144,7 +144,7 @@ export const caseStudies = [
     situation:
       "A major business transition and the integration of six acquisitions created new demands for recruiting capacity, consistency, and coordination.",
     work:
-      "Helped build the TA function while progressing from Manager to Director—strengthening team leadership, vendor workflows, systems coordination, materials, and business partnership.",
+      "Helped build the TA function while progressing from Manager to Director and strengthening team leadership, vendor workflows, systems coordination, materials, and business partnership.",
     result:
       "Scaled the TA team from 2 to 10 and created a more consistent recruiting foundation for a changing business.",
     tags: ["Function building", "Acquisition integration", "Team leadership"],
@@ -214,7 +214,7 @@ export const experience = [
   },
   {
     company: "Tractor Supply Company",
-    role: "Manager, Recruiting — Stores",
+    role: "Manager, Recruiting, Stores",
     period: "Operations",
     summary:
       "Led recruiting operations, coached recruiters, supported nationwide leadership hiring, and improved processes and systems.",

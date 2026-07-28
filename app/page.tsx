@@ -58,7 +58,7 @@ export default function Home() {
       />
 
       <header className="site-header">
-        <a aria-label="Adam Bogren — home" className="brand" href="#top">
+        <a aria-label="Adam Bogren, home" className="brand" href="#top">
           <span className="brand-mark">{profile.shortName}</span>
           <span className="brand-name">{profile.name}</span>
         </a>
@@ -138,7 +138,7 @@ export default function Home() {
         <div className="hero-note animate-in animate-delay-3">
           <span>01</span>
           <div>
-            <strong>Be the best today. How can we be better tomorrow?</strong>
+            <strong>Build what works. Improve what doesn’t.</strong>
             <p>Deliver. Measure. Learn. Improve. Repeat.</p>
           </div>
         </div>
@@ -291,7 +291,7 @@ export default function Home() {
           <div className="dashboard-principles">
             <div>
               <blockquote>
-                “Automation should increase authenticity—not replace it.”
+                “Automation should increase authenticity, not replace it.”
               </blockquote>
               <p>
                 Human judgment remains responsible for candidate relationships, context,
@@ -299,9 +299,9 @@ export default function Home() {
               </p>
             </div>
             <div className="dashboard-operating-principle">
-              <span>Operating principle</span>
-              <strong>Be the best today. How can we be better tomorrow?</strong>
-              <p>Every result becomes evidence for the next iteration.</p>
+              <span>Working principle</span>
+              <strong>Every result should improve the next decision.</strong>
+              <p>Measure what happens, learn from it, and keep refining the system.</p>
             </div>
           </div>
         </article>
@@ -329,10 +329,6 @@ export default function Home() {
                   <dd>{project.next}</dd>
                 </div>
               </dl>
-              <p className="project-principle">
-                <span>Operating principle</span>
-                Be the best today. How can we be better tomorrow?
-              </p>
               {project.sourceUrl && (
                 <a
                   className="project-source-link"
@@ -362,7 +358,7 @@ export default function Home() {
             <p className="kicker">Career evidence</p>
             <h2 id="work-heading">Talent Acquisition is the proving ground.</h2>
           </div>
-          <p>Three examples of building clarity, capability, and momentum in complex hiring environments—the foundation beneath the lab.</p>
+          <p>Three examples of building clarity, capability, and momentum in complex hiring environments. That work is the foundation beneath the lab.</p>
         </div>
 
         <div className="case-list">
@@ -405,7 +401,7 @@ export default function Home() {
               <h2 id="capabilities-heading">Strategy that reaches the operating details.</h2>
             </div>
             <p>
-              I work across the seams—where recruiting, finance, operations, HR,
+              I work across the seams where recruiting, finance, operations, HR,
               systems, and leadership all need to agree on what happens next.
             </p>
           </div>
@@ -430,8 +426,8 @@ export default function Home() {
           <p>
             A career that began in third-party agency recruiting on straight
             commission, then expanded across corporate, production, technical,
-            frontline, and leadership hiring—from individual execution to
-            function building and transformation.
+            frontline, and leadership hiring. My work expanded from individual
+            execution to function building and transformation.
           </p>
         </div>
         <div className="timeline">
@@ -473,7 +469,7 @@ export default function Home() {
             </p>
             <p>
               I value direct communication, practical solutions, and process that
-              solves a real problem—not process theater.
+              solves a real problem, not process theater.
             </p>
             <p>
               Adam&apos;s AI Lab is a natural extension of that work: a place to test

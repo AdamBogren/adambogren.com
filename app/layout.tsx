@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase,
     title: {
-      default: "Adam Bogren — Talent Acquisition, AI & Systems",
+      default: "Adam Bogren | Talent Acquisition, AI & Systems",
       template: "%s | Adam Bogren",
     },
     description,
@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
     authors: [{ name: "Adam Bogren" }],
     creator: "Adam Bogren",
     openGraph: {
-      title: "Adam Bogren — I build practical operating systems.",
+      title: "Adam Bogren | I build practical operating systems.",
       description:
         "Talent Acquisition expertise at the intersection of AI, automation, data, and process design.",
       url: "https://adambogren.com",
@@ -49,13 +49,13 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1731,
           height: 909,
-          alt: "Adam Bogren — Talent Acquisition, AI, automation, and systems thinking.",
+          alt: "Adam Bogren: Talent Acquisition, AI, automation, and systems thinking.",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Adam Bogren — Talent Acquisition, AI & Systems",
+      title: "Adam Bogren | Talent Acquisition, AI & Systems",
       description: "I build practical operating systems.",
       images: [socialImage],
     },

@@ -581,29 +581,6 @@ svg {
   margin-top: 7px;
 }
 
-.project-principle {
-  border-top: 1px solid var(--line);
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 17px;
-  font-style: italic;
-  line-height: 1.35;
-  margin-top: 24px;
-  padding-top: 18px;
-}
-
-.project-principle span {
-  color: var(--accent);
-  display: block;
-  font-family: var(--sans);
-  font-size: 9px;
-  font-style: normal;
-  font-weight: 850;
-  letter-spacing: 0.12em;
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-
 .project-source-link {
   align-items: center;
   align-self: flex-start;
