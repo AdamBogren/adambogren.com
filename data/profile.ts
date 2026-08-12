@@ -10,7 +10,7 @@ export const profile = {
 export const labProjects = [
   {
     index: "01",
-    status: "Building",
+    status: "Live",
     title: "adambogren.com",
     summary:
       "The public front door to my career experience, practical AI experiments, and the lessons connecting them.",
@@ -18,7 +18,7 @@ export const labProjects = [
       "A resume can summarize outcomes, but it cannot fully show how someone thinks, builds, and learns.",
     approach:
       "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
-    next: "Publish the MVP, connect the custom domain, and add deeper case studies as the work matures.",
+    next: "Keep the operating evidence current and add deeper case studies as the work matures.",
     sourceUrl: "https://github.com/AdamBogren/adambogren.com",
     tags: ["Portfolio", "Product thinking", "Documentation"],
   },
@@ -38,7 +38,7 @@ export const labProjects = [
   },
   {
     index: "03",
-    status: "Prototype",
+    status: "Active",
     title: "Raspberry Pi AI Server",
     summary:
       "An always-on home platform for scheduled workflows, health checks, logging, and future privacy-conscious automations.",
@@ -46,7 +46,7 @@ export const labProjects = [
       "Useful automations should not require a laptop, illuminated monitors, or a person remembering to start them.",
     approach:
       "Move repeatable work into a small, reliable server with clear logs and graceful failure handling.",
-    next: "Harden reliability, move the weekday search schedule, then add notifications.",
+    next: "Continue hardening reliability, strengthen failure notifications, and expand privacy-conscious automations.",
     sourceUrl: null,
     tags: ["Raspberry Pi", "Automation", "Observability"],
   },
@@ -60,14 +60,14 @@ export const careerDashboard = {
   summary:
     "A working decision system for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
   metrics: [
-    { value: "149", label: "Roles assessed", tone: "navy" },
-    { value: "56", label: "Qualified / advanced", tone: "blue" },
-    { value: "61", label: "Intentionally skipped", tone: "orange" },
-    { value: "32", label: "Closed / removed", tone: "crimson" },
+    { value: "184", label: "Roles assessed", tone: "navy" },
+    { value: "71", label: "Qualified / advanced", tone: "blue" },
+    { value: "73", label: "Intentionally skipped", tone: "orange" },
+    { value: "40", label: "Closed / removed", tone: "crimson" },
   ],
   rates: [
-    { value: "36.7%", label: "Application rate" },
-    { value: "37.6%", label: "Qualified lead rate" },
+    { value: "38.6%", label: "Application rate" },
+    { value: "38.6%", label: "Qualified lead rate" },
     { value: "100.0%", label: "Decision coverage" },
   ],
   flow: [

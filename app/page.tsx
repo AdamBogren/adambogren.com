@@ -72,7 +72,7 @@ async function getDashboardSnapshot(): Promise<DashboardSnapshot> {
     return (await response.json()) as DashboardSnapshot;
   } catch {
     return {
-      updatedAt: "2026-07-27T20:18:40-05:00",
+      updatedAt: "2026-08-12T12:00:00-05:00",
       metrics: careerDashboard.metrics,
       rates: careerDashboard.rates,
     };
