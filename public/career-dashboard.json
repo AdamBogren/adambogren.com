@@ -1,14 +1,39 @@
 {
-  "updatedAt": "2026-08-12T12:00:00-05:00",
+  "updatedAt": "2026-08-13T03:15:04+00:00",
   "metrics": [
-    { "value": "184", "label": "Roles assessed", "tone": "navy" },
-    { "value": "71", "label": "Qualified / advanced", "tone": "blue" },
-    { "value": "73", "label": "Intentionally skipped", "tone": "orange" },
-    { "value": "40", "label": "Closed / removed", "tone": "crimson" }
+    {
+      "value": "187",
+      "label": "Roles assessed",
+      "tone": "navy"
+    },
+    {
+      "value": "74",
+      "label": "Qualified / advanced",
+      "tone": "blue"
+    },
+    {
+      "value": "73",
+      "label": "Intentionally skipped",
+      "tone": "orange"
+    },
+    {
+      "value": "40",
+      "label": "Closed / removed",
+      "tone": "crimson"
+    }
   ],
   "rates": [
-    { "value": "38.6%", "label": "Application rate" },
-    { "value": "38.6%", "label": "Qualified lead rate" },
-    { "value": "100.0%", "label": "Decision coverage" }
+    {
+      "value": "39.6%",
+      "label": "Application rate"
+    },
+    {
+      "value": "39.6%",
+      "label": "Qualified lead rate"
+    },
+    {
+      "value": "100.0%",
+      "label": "Decision coverage"
+    }
   ]
 }
