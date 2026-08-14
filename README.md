@@ -36,7 +36,7 @@ The site is built with React, Next.js-compatible app routes, vinext, and Vite. I
 - Search/social metadata: `app/layout.tsx`
 - Sitemap and crawler policy: `app/sitemap.ts` and `app/robots.ts`
 
-Never publish credentials, job-search records, family information, home-network details, addresses, security routines, camera/event information, or private repository links.
+Never publish credentials, job-search records, family information, home-network details, addresses, security routines, event information, or private repository links.
 
 ## Deployment
 
