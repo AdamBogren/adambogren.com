@@ -118,7 +118,7 @@ export const outcomes = [
     note: "Team improvement, 2015–2019",
   },
   {
-    value: "2 → 10",
+    value: "1 → 10",
     label: "TA team growth",
     note: "Built capacity through change",
   },
@@ -146,7 +146,7 @@ export const caseStudies = [
     work:
       "Helped build the TA function while progressing from Manager to Director and strengthening team leadership, vendor workflows, systems coordination, materials, and business partnership.",
     result:
-      "Scaled the TA team from 2 to 10 and created a more consistent recruiting foundation for a changing business.",
+      "Scaled the TA team from 1 to 10 and created a more consistent recruiting foundation for a changing business.",
     tags: ["Function building", "Acquisition integration", "Team leadership"],
   },
   {
