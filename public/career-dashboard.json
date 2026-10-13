@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-10-12T03:15:04+00:00",
+  "updatedAt": "2026-10-13T03:15:04+00:00",
   "metrics": [
     {
-      "value": "520",
+      "value": "567",
       "label": "Roles assessed",
       "tone": "navy"
     },
     {
-      "value": "147",
+      "value": "158",
       "label": "Qualified / advanced",
       "tone": "blue"
     },
     {
-      "value": "314",
+      "value": "349",
       "label": "Intentionally skipped",
       "tone": "orange"
     },
@@ -24,15 +24,15 @@
   ],
   "rates": [
     {
-      "value": "28.3%",
+      "value": "27.9%",
       "label": "Application rate"
     },
     {
-      "value": "28.3%",
+      "value": "27.9%",
       "label": "Qualified lead rate"
     },
     {
-      "value": "99.2%",
+      "value": "99.1%",
       "label": "Decision coverage"
     }
   ]
