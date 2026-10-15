@@ -47,9 +47,12 @@ Follow this workflow when the user confirms an application or when a Verified Le
 6. Add or retain the job on Reviewed as the historical review record.
 7. Update its Reviewed status to indicate that it was moved to the application tracker, using the workbook’s approved status wording.
 8. Remove the job from Verified Leads.
-9. The same job must not remain on both Verified Leads and 2026 Job Application Tracker.
-10. A job may appear on both 2026 Job Application Tracker and Reviewed because Reviewed is the historical archive.
-11. Check whether the Pivot or Review Dashboard updates automatically. Preserve their formulas and source ranges.
+9. Check whether the Pivot or Review Dashboard updates automatically. Preserve their formulas and source ranges.
+
+### Record Placement Rules
+
+- The same job must not remain on both Verified Leads and 2026 Job Application Tracker.
+- A job may appear on both 2026 Job Application Tracker and Reviewed because Reviewed is the historical archive.
 
 ## 2026 Job Application Tracker Column Standards
 
