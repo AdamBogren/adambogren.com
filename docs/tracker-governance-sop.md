@@ -136,7 +136,6 @@ Follow this workflow when the user confirms an application or when a Verified Le
 
 - Use only values permitted by the applicable dropdown or established workbook convention.
 - Do not create nearly identical status variants.
-- If the workbook contains conflicting wording such as “Move to Application Tracker” and “Moved to Application Tracker,” determine which wording represents an action still waiting to happen and which represents a completed historical action.
 - Update the validation list if necessary so legitimate completed statuses are not marked invalid.
 - Preserve the meaning of existing statuses during formatting cleanup.
 
