@@ -169,7 +169,7 @@ export default async function Home() {
             </div>
             <div>
               <dt>Known for</dt>
-              <dd>Practical systems that earn human trust</dd>
+              <dd>Building strong relationships and practical systems that earn trust.</dd>
             </div>
           </dl>
         </aside>
