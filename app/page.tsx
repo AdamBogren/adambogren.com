@@ -351,7 +351,7 @@ export default async function Home() {
             <article className="lab-card" key={project.index}>
               <div className="lab-card-top">
                 <span className="lab-index">{project.index}</span>
-                <span className="lab-status">{project.status}</span>
+                <span className="lab-status" data-status={project.status}>{project.status}</span>
               </div>
               <h3>{project.title}</h3>
               <p className="lab-summary">{project.summary}</p>
