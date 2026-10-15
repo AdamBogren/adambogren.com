@@ -50,6 +50,23 @@ export const labProjects = [
     sourceUrl: null,
     tags: ["Raspberry Pi", "Automation", "Observability"],
   },
+  {
+    "index": "05",
+    "status": "Active",
+    "title": "Tracker Governance & SOP",
+    "summary": "An auditable rulebook for keeping an AI-assisted job search honest.",
+    "problem": "Automation drifts. A lead sweep adds rows the user never reviewed. A status gets mislabeled. A duplicate slips through because the title matched but the URL was different. Without governance, the system that was supposed to reduce noise starts creating it.",
+    "approach": "A living SOP with explicit rules for every decision point: verify at the official source, dedupe by URL and job ID (never title alone), flag concentration at three applications, freeze metrics when a decision is made, and audit weekly against the rules. Human review is preserved for edge cases, and every correction feeds back into the SOP so the same error doesn't recur.",
+    "next": "Continue tightening the feedback loop between errors and rules, so the system gets more reliable with each correction, not just larger.",
+    "sourceUrl": "https://github.com/AdamBogren/adambogren.com/blob/main/docs/tracker-governance-sop.md",
+    "sourceLabel": "Read the SOP on GitHub",
+    "tags": [
+      "Governance",
+      "Audit",
+      "Human-in-the-loop",
+      "Systems thinking"
+    ]
+  },
 ];
 
 export const careerDashboard = {
