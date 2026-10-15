@@ -36,7 +36,7 @@ Use these rules when a strong match appears at a company where the user has alre
 
 ## Application Workflow
 
-Follow this workflow when the user confirms that I applied to a job or when a Verified Leads row is marked “Move to Application Tracker.”
+Follow this workflow when the user confirms an application or when a Verified Leads row is marked “Move to Application Tracker.”
 8. Add the job to 2026 Job Application Tracker.
 9. Use the application date the user provides. If the user does not provide one, use the current date in America/Chicago.
 10. Include the official application URL and all available job details.
