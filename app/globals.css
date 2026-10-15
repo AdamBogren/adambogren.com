@@ -479,9 +479,10 @@ svg {
 }
 
 .lab-card {
+  --lab-border: var(--accent);
   background: var(--white);
   border: 1px solid var(--line);
-  border-top: 4px solid var(--accent);
+  border-top: 4px solid var(--lab-border);
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
@@ -490,16 +491,12 @@ svg {
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.lab-card:nth-child(2) {
-  border-top-color: var(--jayhawk-blue-pop);
-}
-
-.lab-card:nth-child(3) {
-  border-top-color: var(--jayhawk-crimson);
+.lab-card:has(.lab-status[data-status="Active"]) {
+  --lab-border: var(--jayhawk-blue-pop);
 }
 
 .lab-card:hover {
-  border-color: var(--accent);
+  border-color: var(--lab-border);
   transform: translateY(-4px);
 }
 
