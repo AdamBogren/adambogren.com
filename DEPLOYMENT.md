@@ -13,6 +13,18 @@
 
 ## Release checklist
 
+## Automatic dashboard data
+
+The Pi refreshes the public, aggregate-only GitHub snapshot nightly. Both the
+homepage and `/career-dashboard.json` fetch that source at runtime with no-store
+caching and a 10-second timeout. No Sites deployment is needed for metric updates.
+The JSON endpoint returns 503 when the source fails; the page shows unavailable
+values rather than substituting old totals. Snapshots older than 36 hours show an
+overdue warning. The tracked public/career-dashboard.json is the GitHub source snapshot. The build
+excludes that file from deployed static assets so it cannot shadow the runtime endpoint. Qualitative source changes still require a Sites deployment.
+
+## Release checks
+
 - Production build succeeds.
 - Source tests and lint pass.
 - Desktop and 390px phone views have no horizontal overflow.

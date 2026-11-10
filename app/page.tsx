@@ -7,6 +7,9 @@ import {
   outcomes,
   profile,
 } from "@/data/profile";
+import { readDashboardSnapshot } from "./dashboard-snapshot";
+
+export const dynamic = "force-dynamic";
 
 function ArrowUpRight({ className = "" }: { className?: string }) {
   return (
@@ -55,26 +58,14 @@ type DashboardSnapshot = {
   rates: typeof careerDashboard.rates;
 };
 
-const dashboardSnapshotUrl =
-  "https://raw.githubusercontent.com/AdamBogren/adambogren.com/main/public/career-dashboard.json";
-
 async function getDashboardSnapshot(): Promise<DashboardSnapshot> {
   try {
-    const response = await fetch(dashboardSnapshotUrl, {
-      headers: { Accept: "application/json" },
-      next: { revalidate: 300 },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Dashboard snapshot request failed with ${response.status}`);
-    }
-
-    return (await response.json()) as DashboardSnapshot;
+    return await readDashboardSnapshot();
   } catch {
     return {
-      updatedAt: "2026-08-12T12:00:00-05:00",
-      metrics: careerDashboard.metrics,
-      rates: careerDashboard.rates,
+      updatedAt: "",
+      metrics: careerDashboard.metrics.map(m => ({ ...m, value: "Unavailable" })),
+      rates: careerDashboard.rates.map(r => ({ ...r, value: "Unavailable" })),
     };
   }
 }
@@ -310,8 +301,9 @@ export default async function Home() {
                   </div>
                 ))}
                 <p className="dashboard-source-note">
-                  Aggregate results refreshed after completed review runs. Last updated{" "}
-                  {formatDashboardUpdate(dashboardSnapshot.updatedAt)}. Employer and
+                  {dashboardSnapshot.updatedAt
+                    ? `Aggregate snapshot refreshed nightly. Last updated ${formatDashboardUpdate(dashboardSnapshot.updatedAt)}.${Date.now() - Date.parse(dashboardSnapshot.updatedAt) > 36 * 3600000 ? " Refresh overdue; these figures may be stale." : ""}`
+                    : "Live dashboard temporarily unavailable. No historical figures substituted."} Employer and
                   application details remain private.
                 </p>
               </div>
@@ -376,7 +368,7 @@ export default async function Home() {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  View source on GitHub
+                  {project.sourceLabel ?? "View source on GitHub"}
                   <ArrowUpRight />
                 </a>
               )}

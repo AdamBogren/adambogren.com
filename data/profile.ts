@@ -20,6 +20,7 @@ export const labProjects = [
       "Combine career evidence with transparent project notes in one durable, low-maintenance home on the web.",
     next: "Keep the operating evidence current and add deeper case studies as the work matures.",
     sourceUrl: "https://github.com/AdamBogren/adambogren.com",
+    sourceLabel: "View source on GitHub",
     tags: ["Portfolio", "Product thinking", "Documentation"],
   },
   {
@@ -32,8 +33,10 @@ export const labProjects = [
       "A high-volume search creates noise, duplicated effort, and decisions that are hard to revisit.",
     approach:
       "Separate discovery, verification, evaluation, decision, and learning into an auditable operating rhythm.",
-    next: "Continue improving selectivity, evidence quality, and unattended weekday execution.",
+    next:
+      "Continue broadening unattended discovery while tightening official-source verification, retrying ambiguous results, and preserving human review for edge cases.",
     sourceUrl: null,
+    sourceLabel: null,
     tags: ["AI workflow", "Decision support", "Governance"],
   },
   {
@@ -45,16 +48,33 @@ export const labProjects = [
     problem:
       "Useful automations should not require a laptop, illuminated monitors, or a person remembering to start them.",
     approach:
-      "Move repeatable work into a small, reliable server with clear logs and graceful failure handling.",
+      "Move repeatable work into a small, reliable server with clear logs and graceful failure handling. Recent improvements include dashboard validation, refresh retries, and freshness monitoring. Production publishing remains a separate deployment step.",
     next: "Continue hardening reliability, strengthen failure notifications, and expand privacy-conscious automations.",
     sourceUrl: null,
+    sourceLabel: null,
     tags: ["Raspberry Pi", "Automation", "Observability"],
+  },
+  {
+    index: "04",
+    status: "Live",
+    title: "Intake to Offer",
+    summary:
+      "A set of AI-assisted recruiting tools following the real arc of a search, from hiring-manager intake through candidate submittal.",
+    problem:
+      "Recruiting tools usually treat each step—writing the posting, briefing the hiring manager, and drafting outreach—as separate, disconnected tasks.",
+    approach:
+      "Three linked tools built around the same intake-to-offer workflow: a job description generator that turns intake-meeting notes into a brand-voiced posting, a candidate brief builder using Adam's actual submittal format, and a cover letter generator. Public demos run on fictional company and candidate data, rate-limited and watermarked.",
+    next:
+      "Continue refining the private application workflow with stronger evidence checks, layout validation, and human review before use.",
+    sourceUrl: "https://intake-to-offer.vercel.app",
+    sourceLabel: "View the live tool",
+    tags: ["Recruiting workflow", "AI enablement", "Candidate experience"],
   },
   {
     "index": "05",
     "status": "Active",
     "title": "Tracker Governance & SOP",
-    "summary": "An auditable rulebook for keeping an AI-assisted job search honest.",
+    "summary": "Documented review decisions, status transitions, and record-placement rules to make the workflow clearer and more consistent.",
     "problem": "Automation drifts. A lead sweep adds rows the user never reviewed. A status gets mislabeled. A duplicate slips through because the title matched but the URL was different. Without governance, the system that was supposed to reduce noise starts creating it.",
     "approach": "A living SOP with explicit rules for every decision point: verify at the official source, dedupe by URL and job ID (never title alone), flag concentration at three applications, freeze metrics when a decision is made, and audit weekly against the rules. Human review is preserved for edge cases, and every correction feeds back into the SOP so the same error doesn't recur.",
     "next": "Continue tightening the feedback loop between errors and rules, so the system gets more reliable with each correction, not just larger.",

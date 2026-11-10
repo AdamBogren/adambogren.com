@@ -25,6 +25,8 @@ export function sites(): Plugin {
       root = config.root;
     },
     async closeBundle() {
+      // Keep the GitHub source snapshot without shadowing the live JSON route.
+      await rm(resolve(root, "dist", "client", "career-dashboard.json"), { force: true });
       const outputDirectory = resolve(root, "dist", ".openai");
       const hostingConfig = resolve(root, ".openai", "hosting.json");
       const drizzleSource = resolve(root, "drizzle");
