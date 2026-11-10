@@ -4,7 +4,7 @@ export const profile = {
   role: "Talent Acquisition Leader",
   location: "Nashville, Tennessee",
   linkedin: "https://www.linkedin.com/in/abogren/",
-  status: "Open to senior TA leadership and high-impact individual-contributor roles",
+  status: "At Exceptional HR Solutions, I help growing businesses fill critical roles while building the recruiting teams, processes, and visibility needed to sustain results.",
 };
 
 export const labProjects = [
