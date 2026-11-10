@@ -38,3 +38,12 @@ test("page and JSON endpoint share a live, uncached source", async () => {
   assert.match(page, /No historical figures substituted/);
   assert.doesNotMatch(page, /updatedAt: "2026-/);
 });
+
+test("production routes dashboard JSON through the live handler", async () => {
+  const bundle = await readFile(new URL("../dist/server/index.js", import.meta.url), "utf8");
+  const publicFiles = bundle.match(/var __publicFiles = new Set\((\[[\s\S]*?\])\);/);
+  assert.ok(publicFiles, "built public-file index exists");
+  assert.ok(!JSON.parse(publicFiles[1]).includes("/career-dashboard.json"));
+  assert.match(bundle, /route-handler:\/career-dashboard\.json/);
+  await assert.rejects(readFile(new URL("../dist/client/career-dashboard.json", import.meta.url)), {code: "ENOENT"});
+});

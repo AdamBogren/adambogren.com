@@ -21,6 +21,16 @@ export function sites(): Plugin {
   return {
     name: "sites",
     apply: "build",
+    transform(code, id) {
+      if (!id.includes("virtual:vinext-rsc-entry")) return;
+      // Vinext indexes root/public before route matching. Keep the GitHub-only
+      // snapshot out of that index so requests reach the live JSON handler.
+      return code.replace(/const __publicFiles = new Set\((\[[^;]*\])\);/, (_match, files) =>
+        `const __publicFiles = new Set(${JSON.stringify(
+          (JSON.parse(files) as string[]).filter((path) => path !== "/career-dashboard.json"),
+        )});`,
+      );
+    },
     configResolved(config) {
       root = config.root;
     },
