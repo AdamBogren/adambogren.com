@@ -155,13 +155,13 @@ export default async function Home() {
         <aside className="hero-aside animate-in animate-delay-2" aria-label="Current focus">
           <div className="status-line">
             <span className="status-dot" />
-            Currently exploring
+            Currently focused
           </div>
           <p>{profile.status}</p>
           <dl>
             <div>
               <dt>Focus</dt>
-              <dd>TA leadership · AI enablement · Transformation</dd>
+              <dd>Critical hiring · Recruiting operations · Team development</dd>
             </div>
             <div>
               <dt>Based</dt>
