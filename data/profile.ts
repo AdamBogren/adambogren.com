@@ -25,16 +25,16 @@ export const labProjects = [
   },
   {
     index: "02",
-    status: "Active",
+    status: "Completed",
     title: "Career Operating System",
     summary:
-      "An AI-assisted workflow for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
+      "A documented 2026 case study of an AI-assisted job-search workflow for discovering, verifying, evaluating, and reviewing opportunities while retaining human judgment.",
     problem:
       "A high-volume search creates noise, duplicated effort, and decisions that are hard to revisit.",
     approach:
       "Separate discovery, verification, evaluation, decision, and learning into an auditable operating rhythm.",
     next:
-      "Continue broadening unattended discovery while tightening official-source verification, retrying ambiguous results, and preserving human review for edge cases.",
+      "Preserve the documented workflow and apply its verification, governance, and decision-quality lessons to recruiting and client intelligence work.",
     sourceUrl: null,
     sourceLabel: null,
     tags: ["AI workflow", "Decision support", "Governance"],
@@ -72,12 +72,12 @@ export const labProjects = [
   },
   {
     "index": "05",
-    "status": "Active",
+    "status": "Documented",
     "title": "Tracker Governance & SOP",
     "summary": "Documented review decisions, status transitions, and record-placement rules to make the workflow clearer and more consistent.",
     "problem": "Automation drifts. A lead sweep adds rows the user never reviewed. A status gets mislabeled. A duplicate slips through because the title matched but the URL was different. Without governance, the system that was supposed to reduce noise starts creating it.",
     "approach": "A living SOP with explicit rules for every decision point: verify at the official source, dedupe by URL and job ID (never title alone), flag concentration at three applications, freeze metrics when a decision is made, and audit weekly against the rules. Human review is preserved for edge cases, and every correction feeds back into the SOP so the same error doesn't recur.",
-    "next": "Continue tightening the feedback loop between errors and rules, so the system gets more reliable with each correction, not just larger.",
+    "next": "Carry the lessons from the completed job-search workflow into future recruiting operations and AI-assisted research.",
     "sourceUrl": "https://github.com/AdamBogren/adambogren.com/blob/main/docs/tracker-governance-sop.md",
     "sourceLabel": "Read the SOP on GitHub",
     "tags": [
@@ -90,12 +90,12 @@ export const labProjects = [
 ];
 
 export const careerDashboard = {
-  eyebrow: "Featured system · Live operating evidence",
+  eyebrow: "Featured case study · Documented operating evidence",
   title: "Career Operating System",
-  subtitle: "2026 Review Dashboard",
-  period: "June 2026–present",
+  subtitle: "2026 Job Search Review",
+  period: "June–October 2026",
   summary:
-    "A working decision system for finding, verifying, evaluating, and learning from job opportunities without handing judgment over to the machine.",
+    "A retrospective of the AI-assisted workflow used during my 2026 job search, from official-source verification to documented decisions and continuous improvement.",
   metrics: [
     { value: "184", label: "Roles assessed", tone: "navy" },
     { value: "71", label: "Qualified / advanced", tone: "blue" },
@@ -128,7 +128,7 @@ export const careerDashboard = {
     {
       label: "Evidence",
       body:
-        "The dashboard measures every verified opportunity and preserves the reason behind nearly every decision, not just applications.",
+        "The dashboard documents reviewed opportunities, decisions, and the reasons behind them, not just applications submitted.",
     },
     {
       label: "Outcome",
@@ -229,9 +229,16 @@ export const capabilities = [
 
 export const experience = [
   {
+    company: "Exceptional HR Solutions",
+    role: "Recruiting Function Lead",
+    period: "October 2026–present",
+    summary:
+      "Building recruiting capability for a fractional HR partner while supporting critical client hiring, team effectiveness, recruiting operations, and scalable processes.",
+  },
+  {
     company: "Genus plc",
     role: "Global Talent Acquisition Senior Manager",
-    period: "Most recent",
+    period: "2024–2026",
     summary:
       "Led work across recruiting strategy, vacancy data, process improvement, structured hiring, sourcing, systems, and stakeholder expectations in a complex global business.",
   },
