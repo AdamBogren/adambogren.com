@@ -265,9 +265,9 @@ export default async function Home() {
             <div className="dashboard-panel-heading">
               <div>
                 <span>Executive decision view</span>
-                <strong>What the search is teaching me</strong>
+                <strong>What the 2026 search taught me</strong>
               </div>
-              <span className="dashboard-live"><i /> Automatically refreshed</span>
+              <span className="dashboard-live">Historical case study</span>
             </div>
 
             <div className="dashboard-metrics">
@@ -302,8 +302,8 @@ export default async function Home() {
                 ))}
                 <p className="dashboard-source-note">
                   {dashboardSnapshot.updatedAt
-                    ? `Aggregate snapshot refreshed nightly. Last updated ${formatDashboardUpdate(dashboardSnapshot.updatedAt)}.${Date.now() - Date.parse(dashboardSnapshot.updatedAt) > 36 * 3600000 ? " Refresh overdue; these figures may be stale." : ""}`
-                    : "Live dashboard temporarily unavailable. No historical figures substituted."} Employer and
+                    ? `Historical dashboard snapshot dated ${formatDashboardUpdate(dashboardSnapshot.updatedAt)}. The job-search workflow was paused after joining Exceptional HR Solutions in October 2026.`
+                    : "Historical dashboard snapshot temporarily unavailable."} Employer and
                   application details remain private.
                 </p>
               </div>
@@ -379,7 +379,7 @@ export default async function Home() {
           ))}
         </div>
         <p className="lab-note">
-          Built in the open, shared responsibly. Sensitive job-search, family,
+          Built in the open, shared responsibly. Sensitive historical job-search, family,
           home-network, and security details stay private.
         </p>
       </section>
